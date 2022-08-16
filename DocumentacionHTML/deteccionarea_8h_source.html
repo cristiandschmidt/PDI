@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente deteccionarea.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('deteccionarea_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">deteccionarea.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="deteccionarea_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DETECCIONAREA_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DETECCIONAREA_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="procesadordeimagen_8h.html">procesadordeimagen.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_deteccion_area.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_deteccion_area.html">DeteccionArea</a> : <span class="keyword">public</span> <a class="code" href="class_procesador_de_imagen.html">ProcesadorDeImagen</a></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_deteccion_area.html#ae130156800f812f1933e69749320eb76">DeteccionArea</a>(<span class="keywordtype">unsigned</span> pFil, <span class="keywordtype">unsigned</span> pCol);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_deteccion_area.html#a5bdf61dfcc4cfee7c157b41485d8c4e3">aplicar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen) <span class="keyword">override</span>;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#a3ab003631ce84bec9049e826d836d988">getArea</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#aaede48f5482fc31f50a3ef03ccf9bc80">getTolerancia</a>() <span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_deteccion_area.html#a0a4f2b79ed80fa6640b4c08c971233af">setTolerancia</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> &amp;pTolerancia);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_deteccion_area.html#a94477fc33234835a2700b82b4cbaa4a6">~DeteccionArea</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_deteccion_area.html#a2df3928b6da53980adab3da294397c3e">rellenar</a>(<span class="keywordtype">unsigned</span> pFil, <span class="keywordtype">unsigned</span> pCol, <a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen, vector&lt;vector&lt;bool&gt;&gt; &amp;mb, <span class="keywordtype">unsigned</span> parte);</div><div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_deteccion_area.html#a8f9cf7f1fd07c6dffa0e921ad8e12c6d">   69</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#a8f9cf7f1fd07c6dffa0e921ad8e12c6d">fil</a>;</div><div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="class_deteccion_area.html#a3d6c8d6c2ade0de8accbcd96dcf96fd7">   74</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#a3d6c8d6c2ade0de8accbcd96dcf96fd7">col</a>;</div><div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_deteccion_area.html#ab933c67be9c6824155f4704afd673837">   79</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#ab933c67be9c6824155f4704afd673837">tolerancia</a>;</div><div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="class_deteccion_area.html#a070259408319ab9091467ea3d9d32cc9">   84</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_deteccion_area.html#a070259408319ab9091467ea3d9d32cc9">area</a>;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="class_deteccion_area.html#a8e5a8ad17365341c44b4f1cd59f3fdb6">   89</a></span>&#160;        <a class="code" href="class_pixel.html">Pixel</a> <a class="code" href="class_deteccion_area.html#a8e5a8ad17365341c44b4f1cd59f3fdb6">pixelInicial</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif // DETECCIONAREA_H</span></div><div class="ttc" id="class_deteccion_area_html_ab933c67be9c6824155f4704afd673837"><div class="ttname"><a href="class_deteccion_area.html#ab933c67be9c6824155f4704afd673837">DeteccionArea::tolerancia</a></div><div class="ttdeci">unsigned tolerancia</div><div class="ttdoc">tolerancia Atributo de tipo entero sin signo, con el valor de tolerancia con la que se comparan las i...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00079">deteccionarea.h:79</a></div></div>
+<div class="ttc" id="class_procesador_de_imagen_html"><div class="ttname"><a href="class_procesador_de_imagen.html">ProcesadorDeImagen</a></div><div class="ttdoc">Modela un procesador de imagen general que permite aplicar modificaciones a la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="procesadordeimagen_8h_source.html#l00013">procesadordeimagen.h:13</a></div></div>
+<div class="ttc" id="class_deteccion_area_html"><div class="ttname"><a href="class_deteccion_area.html">DeteccionArea</a></div><div class="ttdoc">Modela la deteccion de área, encargada de detectar un área sobre la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00013">deteccionarea.h:13</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_ae130156800f812f1933e69749320eb76"><div class="ttname"><a href="class_deteccion_area.html#ae130156800f812f1933e69749320eb76">DeteccionArea::DeteccionArea</a></div><div class="ttdeci">DeteccionArea(unsigned pFil, unsigned pCol)</div><div class="ttdoc">DeteccionArea Constructor de la clase DeteccionArea. </div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00004">deteccionarea.cpp:4</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a3ab003631ce84bec9049e826d836d988"><div class="ttname"><a href="class_deteccion_area.html#a3ab003631ce84bec9049e826d836d988">DeteccionArea::getArea</a></div><div class="ttdeci">unsigned getArea() const</div><div class="ttdoc">getArea Método que devuelve el área de la región que se detecta (en cantidad de pixeles). </div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00085">deteccionarea.cpp:85</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_aaede48f5482fc31f50a3ef03ccf9bc80"><div class="ttname"><a href="class_deteccion_area.html#aaede48f5482fc31f50a3ef03ccf9bc80">DeteccionArea::getTolerancia</a></div><div class="ttdeci">unsigned getTolerancia() const</div><div class="ttdoc">getTolerancia Método que devulve la tolerancia con la que se comparan las intensidades de los pixeles...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00075">deteccionarea.cpp:75</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a2df3928b6da53980adab3da294397c3e"><div class="ttname"><a href="class_deteccion_area.html#a2df3928b6da53980adab3da294397c3e">DeteccionArea::rellenar</a></div><div class="ttdeci">void rellenar(unsigned pFil, unsigned pCol, Imagen &amp;pImagen, vector&lt; vector&lt; bool &gt;&gt; &amp;mb, unsigned parte)</div><div class="ttdoc">rellenar Método privado encargado de implementar el algoritmo del pintor para determinar el área y &amp;#39;r...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00045">deteccionarea.cpp:45</a></div></div>
+<div class="ttc" id="procesadordeimagen_8h_html"><div class="ttname"><a href="procesadordeimagen_8h.html">procesadordeimagen.h</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a5bdf61dfcc4cfee7c157b41485d8c4e3"><div class="ttname"><a href="class_deteccion_area.html#a5bdf61dfcc4cfee7c157b41485d8c4e3">DeteccionArea::aplicar</a></div><div class="ttdeci">void aplicar(Imagen &amp;pImagen) override</div><div class="ttdoc">aplicar Método de clase base redefinido encargado de detectar un área sobre la imagen mediante un alg...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00011">deteccionarea.cpp:11</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a94477fc33234835a2700b82b4cbaa4a6"><div class="ttname"><a href="class_deteccion_area.html#a94477fc33234835a2700b82b4cbaa4a6">DeteccionArea::~DeteccionArea</a></div><div class="ttdeci">~DeteccionArea() override</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00032">deteccionarea.cpp:32</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a8f9cf7f1fd07c6dffa0e921ad8e12c6d"><div class="ttname"><a href="class_deteccion_area.html#a8f9cf7f1fd07c6dffa0e921ad8e12c6d">DeteccionArea::fil</a></div><div class="ttdeci">unsigned fil</div><div class="ttdoc">fil Atributo de tipo entero sin signo, con el valor de la fila a partir de la cual se comienza a dete...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00069">deteccionarea.h:69</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a0a4f2b79ed80fa6640b4c08c971233af"><div class="ttname"><a href="class_deteccion_area.html#a0a4f2b79ed80fa6640b4c08c971233af">DeteccionArea::setTolerancia</a></div><div class="ttdeci">void setTolerancia(const unsigned &amp;pTolerancia)</div><div class="ttdoc">setTolerancia Método que permite modificar el valor de tolerancia con la que se comparan las intensid...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8cpp_source.html#l00080">deteccionarea.cpp:80</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a3d6c8d6c2ade0de8accbcd96dcf96fd7"><div class="ttname"><a href="class_deteccion_area.html#a3d6c8d6c2ade0de8accbcd96dcf96fd7">DeteccionArea::col</a></div><div class="ttdeci">unsigned col</div><div class="ttdoc">col Atributo de tipo entero sin signo, con el valor de la columna a partir de la cual se comienza a d...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00074">deteccionarea.h:74</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a070259408319ab9091467ea3d9d32cc9"><div class="ttname"><a href="class_deteccion_area.html#a070259408319ab9091467ea3d9d32cc9">DeteccionArea::area</a></div><div class="ttdeci">unsigned area</div><div class="ttdoc">area Atributo de tipo entero sin signo, con el valor del área de la región detectada en cantidad de p...</div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00084">deteccionarea.h:84</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel, el componente fundamental de información de una imagen. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00016">pixel.h:16</a></div></div>
+<div class="ttc" id="class_deteccion_area_html_a8e5a8ad17365341c44b4f1cd59f3fdb6"><div class="ttname"><a href="class_deteccion_area.html#a8e5a8ad17365341c44b4f1cd59f3fdb6">DeteccionArea::pixelInicial</a></div><div class="ttdeci">Pixel pixelInicial</div><div class="ttdoc">pixelInicial Pixel inicial a partir del cual se comienza a detectar el área. </div><div class="ttdef"><b>Definition:</b> <a href="deteccionarea_8h_source.html#l00089">deteccionarea.h:89</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="deteccionarea_8h.html">deteccionarea.h</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

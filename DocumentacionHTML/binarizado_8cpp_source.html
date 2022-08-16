@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente binarizado.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('binarizado_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">binarizado.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="binarizado_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="binarizado_8h.html">binarizado.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_binarizado.html#a9f73d235e2b6844e9c961ae58365497a">    3</a></span>&#160;<a class="code" href="class_binarizado.html#a9f73d235e2b6844e9c961ae58365497a">Binarizado::Binarizado</a>(<span class="keywordtype">unsigned</span> pValorBinarizado)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <a class="code" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">valorBinarizado</a> = pValorBinarizado;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_binarizado.html#ae0964aaa828b57b9c3c37f83e571292a">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_binarizado.html#ae0964aaa828b57b9c3c37f83e571292a">Binarizado::aplicar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">bool</span> correcto = <a class="code" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">valorBinarizado</a> &gt;= 0 and <a class="code" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">valorBinarizado</a> &lt;= pImagen.<a class="code" href="class_imagen.html#ab21dcf71ff49beee77fd301f4101b306">getIntensidadMaxima</a>();</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordflow">if</span>( correcto )</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; pImagen.<a class="code" href="class_imagen.html#a657201f39f7e69b121e29493560cb356">getAlto</a>(); ++i)</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j = 0; j&lt;pImagen.<a class="code" href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">getAncho</a>(); ++j)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <span class="keywordflow">if</span>(pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i, j).<a class="code" href="class_pixel.html#a06c30ffb186e719500b1779b71f55d38">getIntensidadRGB</a>() &lt;= <a class="code" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">valorBinarizado</a>)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    pImagen.<a class="code" href="class_imagen.html#a5db12111b8763ba216e26bb3654e67ca">setPixel</a>(i , j , <a class="code" href="class_pixel.html">Pixel</a>(0,0,0) );</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                }</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordflow">else</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    pImagen.<a class="code" href="class_imagen.html#a5db12111b8763ba216e26bb3654e67ca">setPixel</a>(i , j , <a class="code" href="class_pixel.html">Pixel</a>( pImagen.<a class="code" href="class_imagen.html#ab21dcf71ff49beee77fd301f4101b306">getIntensidadMaxima</a>(),</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                                    pImagen.<a class="code" href="class_imagen.html#ab21dcf71ff49beee77fd301f4101b306">getIntensidadMaxima</a>(),</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                    pImagen.<a class="code" href="class_imagen.html#ab21dcf71ff49beee77fd301f4101b306">getIntensidadMaxima</a>()));</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                }</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            }</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        }</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_binarizado.html#a872d6bdb6cc6957bbff7e74e6380dbba">   32</a></span>&#160;<a class="code" href="class_binarizado.html#a872d6bdb6cc6957bbff7e74e6380dbba">Binarizado::~Binarizado</a>()</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div><div class="ttc" id="class_binarizado_html_a872d6bdb6cc6957bbff7e74e6380dbba"><div class="ttname"><a href="class_binarizado.html#a872d6bdb6cc6957bbff7e74e6380dbba">Binarizado::~Binarizado</a></div><div class="ttdeci">~Binarizado() override</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00032">binarizado.cpp:32</a></div></div>
+<div class="ttc" id="class_binarizado_html_a1dc5f8b251d080ca58dcf7175ba4c5b1"><div class="ttname"><a href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">Binarizado::valorBinarizado</a></div><div class="ttdeci">unsigned valorBinarizado</div><div class="ttdoc">valorBinarizado Atributo de tipo entero sin signocon el valor de intensidad a partir del cual se bina...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8h_source.html#l00034">binarizado.h:34</a></div></div>
+<div class="ttc" id="class_binarizado_html_ae0964aaa828b57b9c3c37f83e571292a"><div class="ttname"><a href="class_binarizado.html#ae0964aaa828b57b9c3c37f83e571292a">Binarizado::aplicar</a></div><div class="ttdeci">void aplicar(Imagen &amp;pImagen) override</div><div class="ttdoc">aplicar Método de clase base redefinido encargado de aplicar el binarizado a la imagen recibida como ...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00008">binarizado.cpp:8</a></div></div>
+<div class="ttc" id="binarizado_8h_html"><div class="ttname"><a href="binarizado_8h.html">binarizado.h</a></div></div>
+<div class="ttc" id="class_imagen_html_a657201f39f7e69b121e29493560cb356"><div class="ttname"><a href="class_imagen.html#a657201f39f7e69b121e29493560cb356">Imagen::getAlto</a></div><div class="ttdeci">unsigned getAlto() const</div><div class="ttdoc">getAlto Método que permite devolver el alto de la imagen(cantidad filas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00127">imagen.cpp:127</a></div></div>
+<div class="ttc" id="class_imagen_html_a71973c726a85c747508d96eb22ff97f7"><div class="ttname"><a href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">Imagen::getAncho</a></div><div class="ttdeci">unsigned getAncho() const</div><div class="ttdoc">getAncho Método que permite devolver el ancho de la imagen(cantidad columnas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00121">imagen.cpp:121</a></div></div>
+<div class="ttc" id="class_pixel_html_a06c30ffb186e719500b1779b71f55d38"><div class="ttname"><a href="class_pixel.html#a06c30ffb186e719500b1779b71f55d38">Pixel::getIntensidadRGB</a></div><div class="ttdeci">T getIntensidadRGB() const</div><div class="ttdoc">getIntensidadRGB Método encargado de devolver la intenisdad del pixel. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00020">pixel.cpp:20</a></div></div>
+<div class="ttc" id="class_imagen_html_a5db12111b8763ba216e26bb3654e67ca"><div class="ttname"><a href="class_imagen.html#a5db12111b8763ba216e26bb3654e67ca">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(const unsigned &amp;pFila, const unsigned &amp;pColumna, const Pixel &amp;pPixel)</div><div class="ttdoc">setPixel Método que permite asignar un Pixel en la matriz de pixeles. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00038">imagen.cpp:38</a></div></div>
+<div class="ttc" id="class_binarizado_html_a9f73d235e2b6844e9c961ae58365497a"><div class="ttname"><a href="class_binarizado.html#a9f73d235e2b6844e9c961ae58365497a">Binarizado::Binarizado</a></div><div class="ttdeci">Binarizado(unsigned pValorBinarizado)</div><div class="ttdoc">Binarizado Constructor de la clase Binarizado. </div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00003">binarizado.cpp:3</a></div></div>
+<div class="ttc" id="class_imagen_html_a4bb7ec1998f208562bd99ee5f03a51aa"><div class="ttname"><a href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(const unsigned &amp;pFila, const unsigned &amp;pColumna) const</div><div class="ttdoc">getPixel Método que permite devolver un Pixel en la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00033">imagen.cpp:33</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel, el componente fundamental de información de una imagen. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00016">pixel.h:16</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+<div class="ttc" id="class_imagen_html_ab21dcf71ff49beee77fd301f4101b306"><div class="ttname"><a href="class_imagen.html#ab21dcf71ff49beee77fd301f4101b306">Imagen::getIntensidadMaxima</a></div><div class="ttdeci">unsigned getIntensidadMaxima() const</div><div class="ttdoc">getIntensidadMaxima Método que permite devolver la intensidad máxima de los pixeles de la imagen...</div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00133">imagen.cpp:133</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="binarizado_8cpp.html">binarizado.cpp</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

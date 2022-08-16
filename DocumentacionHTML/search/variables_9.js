@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['nombre',['nombre',['../class_imagen.html#aeb5a57b4421c4f55d1ceebb017b7d67a',1,'Imagen']]],
+  ['nombresimagenescorrectas',['nombresImagenesCorrectas',['../class_graficador.html#af63d0c548f54d73b066ff24c564f55ab',1,'Graficador']]],
+  ['nombresimagenescorruptas',['nombresImagenesCorruptas',['../class_graficador.html#ab4cab9e431cb502bcb289e6c4120a650',1,'Graficador']]]
+];

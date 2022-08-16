@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente imagenpnm.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('imagenpnm_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">imagenpnm.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="imagenpnm_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IMAGENPNM_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IMAGENPNM_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="imagen_8h.html">imagen.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_imagen_p_n_m.html">ImagenPNM</a> : <span class="keyword">public</span> <a class="code" href="class_imagen.html">Imagen</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_imagen_p_n_m.html#ae096bd4c5ac13341e28ffd67b2f355ad">ImagenPNM</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_imagen_p_n_m.html#a37d57efaa19612ff19f768258993d87d">abrir</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;pDireccion) <span class="keyword">override</span>;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_imagen_p_n_m.html#a2cd07ddcd57d39166022cb33d392ab5a">guardar</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;pDireccion) <span class="keyword">override</span>;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_imagen_p_n_m.html#abd39755a347ae238f15669b2fdab0559">~ImagenPNM</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959">   40</a></span>&#160;        <span class="keyword">enum</span> <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959">Tipos</a>{</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a46b824c42b3e779d562707749e1ea3b2">   41</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a46b824c42b3e779d562707749e1ea3b2">P1</a>, </div><div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959acbc49b4e139405be7f41979cb2051205">   42</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959acbc49b4e139405be7f41979cb2051205">P2</a>, </div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a40035fab99fc47c845ee111181c2f3db">   43</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a40035fab99fc47c845ee111181c2f3db">P3</a>, </div><div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4a5792a52a64484b58d80f2513ffd0f0">   44</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4a5792a52a64484b58d80f2513ffd0f0">P4</a>, </div><div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a6ecd3de1c43cff45abb00d874ad60567">   45</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a6ecd3de1c43cff45abb00d874ad60567">P5</a>, </div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4c82dbaeaccb2ea65d0557770d4e74ac">   46</a></span>&#160;            <a class="code" href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4c82dbaeaccb2ea65d0557770d4e74ac">P6</a></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        };</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_imagen_p_n_m.html#aa869d3bdd68038097654c5cff6e9e424">   52</a></span>&#160;        vector&lt;string&gt; <a class="code" href="class_imagen_p_n_m.html#aa869d3bdd68038097654c5cff6e9e424">tipos</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // IMAGENPNM_H</span></div><div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959a40035fab99fc47c845ee111181c2f3db"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a40035fab99fc47c845ee111181c2f3db">ImagenPNM::P3</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00043">imagenpnm.h:43</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959a4a5792a52a64484b58d80f2513ffd0f0"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4a5792a52a64484b58d80f2513ffd0f0">ImagenPNM::P4</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00044">imagenpnm.h:44</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959acbc49b4e139405be7f41979cb2051205"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959acbc49b4e139405be7f41979cb2051205">ImagenPNM::P2</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00042">imagenpnm.h:42</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959a4c82dbaeaccb2ea65d0557770d4e74ac"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a4c82dbaeaccb2ea65d0557770d4e74ac">ImagenPNM::P6</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00046">imagenpnm.h:46</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959a46b824c42b3e779d562707749e1ea3b2"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a46b824c42b3e779d562707749e1ea3b2">ImagenPNM::P1</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00041">imagenpnm.h:41</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_ae096bd4c5ac13341e28ffd67b2f355ad"><div class="ttname"><a href="class_imagen_p_n_m.html#ae096bd4c5ac13341e28ffd67b2f355ad">ImagenPNM::ImagenPNM</a></div><div class="ttdeci">ImagenPNM()</div><div class="ttdoc">ImagenPNM Constructor de la clase ImagenPNM. </div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8cpp_source.html#l00003">imagenpnm.cpp:3</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a37d57efaa19612ff19f768258993d87d"><div class="ttname"><a href="class_imagen_p_n_m.html#a37d57efaa19612ff19f768258993d87d">ImagenPNM::abrir</a></div><div class="ttdeci">bool abrir(const string &amp;pDireccion) override</div><div class="ttdoc">abrir Método de clase base redefinido encargado de abrir la imagen en formato PNM desde una direccion...</div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8cpp_source.html#l00013">imagenpnm.cpp:13</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_aa869d3bdd68038097654c5cff6e9e424"><div class="ttname"><a href="class_imagen_p_n_m.html#aa869d3bdd68038097654c5cff6e9e424">ImagenPNM::tipos</a></div><div class="ttdeci">vector&lt; string &gt; tipos</div><div class="ttdoc">tipos Atributo de tipo vector de strings con los tipos de imagenes PNM, se usa para obtener un string...</div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00052">imagenpnm.h:52</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959a6ecd3de1c43cff45abb00d874ad60567"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959a6ecd3de1c43cff45abb00d874ad60567">ImagenPNM::P5</a></div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00045">imagenpnm.h:45</a></div></div>
+<div class="ttc" id="imagen_8h_html"><div class="ttname"><a href="imagen_8h.html">imagen.h</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a2cd07ddcd57d39166022cb33d392ab5a"><div class="ttname"><a href="class_imagen_p_n_m.html#a2cd07ddcd57d39166022cb33d392ab5a">ImagenPNM::guardar</a></div><div class="ttdeci">void guardar(const string &amp;pDireccion) override</div><div class="ttdoc">guardar Método de clase base redefinido encargado de guardar la imagen en formato PNM en una direccio...</div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8cpp_source.html#l00177">imagenpnm.cpp:177</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html"><div class="ttname"><a href="class_imagen_p_n_m.html">ImagenPNM</a></div><div class="ttdoc">Modela una imagen en formato AIC que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00012">imagenpnm.h:12</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_abd39755a347ae238f15669b2fdab0559"><div class="ttname"><a href="class_imagen_p_n_m.html#abd39755a347ae238f15669b2fdab0559">ImagenPNM::~ImagenPNM</a></div><div class="ttdeci">~ImagenPNM() override</div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8cpp_source.html#l00340">imagenpnm.cpp:340</a></div></div>
+<div class="ttc" id="class_imagen_p_n_m_html_a6e601bcdcafab6c7023c94efd597e959"><div class="ttname"><a href="class_imagen_p_n_m.html#a6e601bcdcafab6c7023c94efd597e959">ImagenPNM::Tipos</a></div><div class="ttdeci">Tipos</div><div class="ttdoc">Tipos Atributo de tipo Enumeración de los tipos de imagenes PNM. </div><div class="ttdef"><b>Definition:</b> <a href="imagenpnm_8h_source.html#l00040">imagenpnm.h:40</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="imagenpnm_8h.html">imagenpnm.h</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

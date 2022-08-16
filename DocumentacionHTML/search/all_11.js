@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['seleccionarregion',['seleccionarRegion',['../class_graficador.html#a7ae055edc833020013f660b61acc8760',1,'Graficador']]],
+  ['setbinarizada',['setBinarizada',['../class_imagen.html#af70cdba031e86d023078326ddc91a7da',1,'Imagen']]],
+  ['setdirecciondeguardado',['setDireccionDeGuardado',['../class_imagen.html#a0e0837c9f28a79dc5f6ae3b11ce60e73',1,'Imagen']]],
+  ['setimagen',['setImagen',['../class_graficador.html#a7f9974d0d29bef9140b2404d13f82696',1,'Graficador']]],
+  ['setintensidadb',['setIntensidadB',['../class_pixel.html#a684c969e08f6049ec64c80ee1179353d',1,'Pixel']]],
+  ['setintensidadg',['setIntensidadG',['../class_pixel.html#a9efcc60bc3b443339892d334bb882ee6',1,'Pixel']]],
+  ['setintensidadmaxima',['setIntensidadMaxima',['../class_imagen.html#a28e94b6242af43685c856a87bb1d5996',1,'Imagen']]],
+  ['setintensidadr',['setIntensidadR',['../class_pixel.html#a6b7f62c6c40fce21012a74dee70a4cbf',1,'Pixel']]],
+  ['setintensidadrgb',['setIntensidadRGB',['../class_pixel.html#ac17e4e64fef19dc08dd9ee468e6fcb9f',1,'Pixel']]],
+  ['setlistadirdecarpetas',['setlistaDirDeCarpetas',['../class_sistema.html#aae7af3b095ad10e4430ef58a91421c97',1,'Sistema']]],
+  ['setlistaimagenes',['setListaImagenes',['../class_graficador.html#abcb72889e99a291c20bad62f93d1292c',1,'Graficador']]],
+  ['setlistaimagenesdisponibles',['setListaImagenesDisponibles',['../class_sistema.html#a3b72045e8b9393cdbf0ce5630589cb2f',1,'Sistema']]],
+  ['setmatrizpixeles',['setMatrizPixeles',['../class_imagen.html#a6fc6c19e05b19a77b8090e0a628c5bb0',1,'Imagen']]],
+  ['setmetadatos',['setMetadatos',['../class_imagen.html#a625dce61aed81dca249f6af59453fbc4',1,'Imagen']]],
+  ['setnombre',['setNombre',['../class_imagen.html#a3cbf685a04b1e0731f821a60056e44a2',1,'Imagen']]],
+  ['setpixel',['setPixel',['../class_imagen.html#a5db12111b8763ba216e26bb3654e67ca',1,'Imagen']]],
+  ['settipo',['setTipo',['../class_imagen.html#abbbf581148c2cd062e9a4a689c178e80',1,'Imagen']]],
+  ['settipoanterior',['setTipoAnterior',['../class_imagen.html#a989a9bd84dbdf49fe60bba7f42283785',1,'Imagen']]],
+  ['settolerancia',['setTolerancia',['../class_deteccion_area.html#a0a4f2b79ed80fa6640b4c08c971233af',1,'DeteccionArea']]],
+  ['sistema',['Sistema',['../class_sistema.html',1,'Sistema'],['../class_sistema.html#a815b07845ef6b03247b239333fe75e28',1,'Sistema::Sistema()']]],
+  ['sistema_2ecpp',['sistema.cpp',['../sistema_8cpp.html',1,'']]],
+  ['sistema_2eh',['sistema.h',['../sistema_8h.html',1,'']]],
+  ['suavizado',['Suavizado',['../class_suavizado.html',1,'Suavizado'],['../class_suavizado.html#a5aee4a81a554090b508805f7c5596ed8',1,'Suavizado::Suavizado()']]],
+  ['suavizado_2ecpp',['suavizado.cpp',['../suavizado_8cpp.html',1,'']]],
+  ['suavizado_2eh',['suavizado.h',['../suavizado_8h.html',1,'']]]
+];

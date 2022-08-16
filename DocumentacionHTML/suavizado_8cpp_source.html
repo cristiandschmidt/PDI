@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente suavizado.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('suavizado_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">suavizado.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="suavizado_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="suavizado_8h.html">suavizado.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="class_suavizado.html#a5aee4a81a554090b508805f7c5596ed8">    4</a></span>&#160;<a class="code" href="class_suavizado.html#a5aee4a81a554090b508805f7c5596ed8">Suavizado::Suavizado</a>()</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;}</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_suavizado.html#a13311c6603f1589102a0e4eb14bd5b32">    9</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_suavizado.html#a13311c6603f1589102a0e4eb14bd5b32">Suavizado::aplicar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    vector&lt;vector&lt;Pixel&gt;&gt; matrizAux;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    matrizAux = pImagen.<a class="code" href="class_imagen.html#a36c658bf995b80e53d49671a562d3dc0">getMatrizPixeles</a>();</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_pixel.html">Pixel</a> pixelAux;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">bool</span> estaEnImagen = <span class="keyword">false</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0 ; i &lt; pImagen.<a class="code" href="class_imagen.html#a657201f39f7e69b121e29493560cb356">getAlto</a>(); ++i)</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j = 0; j &lt; pImagen.<a class="code" href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">getAncho</a>(); ++j )</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            estaEnImagen = i &lt; pImagen.<a class="code" href="class_imagen.html#a657201f39f7e69b121e29493560cb356">getAlto</a>()-1  and j &lt; pImagen.<a class="code" href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">getAncho</a>()-1 and  i &gt; 0 and j &gt; 0;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordflow">if</span>(estaEnImagen)</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                pixelAux = (pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i,j) + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i+1,j)</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                            + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i+1,j-1) + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i,j-1)</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                            + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i-1,j-1) + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i-1,j)</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                            + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i-1,j+1) + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i,j+1)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                            + pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i+1,j+1))*(1.0/9);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                matrizAux[i][j] = pixelAux;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        }</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    pImagen.<a class="code" href="class_imagen.html#a6fc6c19e05b19a77b8090e0a628c5bb0">setMatrizPixeles</a>(matrizAux);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_suavizado.html#a8ad83204b06e80c88686cb0b9a234a01">   35</a></span>&#160;<a class="code" href="class_suavizado.html#a8ad83204b06e80c88686cb0b9a234a01">Suavizado::~Suavizado</a>()</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="ttc" id="class_suavizado_html_a5aee4a81a554090b508805f7c5596ed8"><div class="ttname"><a href="class_suavizado.html#a5aee4a81a554090b508805f7c5596ed8">Suavizado::Suavizado</a></div><div class="ttdeci">Suavizado()</div><div class="ttdoc">Suavizado Constructor de la clase Suavizado. </div><div class="ttdef"><b>Definition:</b> <a href="suavizado_8cpp_source.html#l00004">suavizado.cpp:4</a></div></div>
+<div class="ttc" id="class_suavizado_html_a8ad83204b06e80c88686cb0b9a234a01"><div class="ttname"><a href="class_suavizado.html#a8ad83204b06e80c88686cb0b9a234a01">Suavizado::~Suavizado</a></div><div class="ttdeci">~Suavizado() override</div><div class="ttdef"><b>Definition:</b> <a href="suavizado_8cpp_source.html#l00035">suavizado.cpp:35</a></div></div>
+<div class="ttc" id="class_imagen_html_a657201f39f7e69b121e29493560cb356"><div class="ttname"><a href="class_imagen.html#a657201f39f7e69b121e29493560cb356">Imagen::getAlto</a></div><div class="ttdeci">unsigned getAlto() const</div><div class="ttdoc">getAlto Método que permite devolver el alto de la imagen(cantidad filas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00127">imagen.cpp:127</a></div></div>
+<div class="ttc" id="class_imagen_html_a36c658bf995b80e53d49671a562d3dc0"><div class="ttname"><a href="class_imagen.html#a36c658bf995b80e53d49671a562d3dc0">Imagen::getMatrizPixeles</a></div><div class="ttdeci">vector&lt; vector&lt; Pixel &gt; &gt; getMatrizPixeles() const</div><div class="ttdoc">getMatrizPixeles Método que permite devolver la matriz de pixeles de la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00055">imagen.cpp:55</a></div></div>
+<div class="ttc" id="class_imagen_html_a71973c726a85c747508d96eb22ff97f7"><div class="ttname"><a href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">Imagen::getAncho</a></div><div class="ttdeci">unsigned getAncho() const</div><div class="ttdoc">getAncho Método que permite devolver el ancho de la imagen(cantidad columnas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00121">imagen.cpp:121</a></div></div>
+<div class="ttc" id="suavizado_8h_html"><div class="ttname"><a href="suavizado_8h.html">suavizado.h</a></div></div>
+<div class="ttc" id="class_suavizado_html_a13311c6603f1589102a0e4eb14bd5b32"><div class="ttname"><a href="class_suavizado.html#a13311c6603f1589102a0e4eb14bd5b32">Suavizado::aplicar</a></div><div class="ttdeci">void aplicar(Imagen &amp;pImagen) override</div><div class="ttdoc">aplicar Método de clase base redefinido encargado de aplicar el filtro de suavizado (pasa bajos) a la...</div><div class="ttdef"><b>Definition:</b> <a href="suavizado_8cpp_source.html#l00009">suavizado.cpp:9</a></div></div>
+<div class="ttc" id="class_imagen_html_a6fc6c19e05b19a77b8090e0a628c5bb0"><div class="ttname"><a href="class_imagen.html#a6fc6c19e05b19a77b8090e0a628c5bb0">Imagen::setMatrizPixeles</a></div><div class="ttdeci">void setMatrizPixeles(const vector&lt; vector&lt; Pixel &gt; &gt; &amp;pMatrizPixeles)</div><div class="ttdoc">setMatrizPixeles Método que permite asignar una matriz de pixeles a la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00060">imagen.cpp:60</a></div></div>
+<div class="ttc" id="class_imagen_html_a4bb7ec1998f208562bd99ee5f03a51aa"><div class="ttname"><a href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(const unsigned &amp;pFila, const unsigned &amp;pColumna) const</div><div class="ttdoc">getPixel Método que permite devolver un Pixel en la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00033">imagen.cpp:33</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel, el componente fundamental de información de una imagen. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00016">pixel.h:16</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="suavizado_8cpp.html">suavizado.cpp</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

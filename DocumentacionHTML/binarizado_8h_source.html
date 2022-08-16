@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente binarizado.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('binarizado_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">binarizado.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="binarizado_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BINARIZADO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define BINARIZADO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="procesadordeimagen_8h.html">procesadordeimagen.h</a>&quot;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="procesadordeimagen_8h.html">procesadordeimagen.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_binarizado.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_binarizado.html">Binarizado</a> : <span class="keyword">public</span> <a class="code" href="class_procesador_de_imagen.html">ProcesadorDeImagen</a></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <a class="code" href="class_binarizado.html#a9f73d235e2b6844e9c961ae58365497a">Binarizado</a>(<span class="keywordtype">unsigned</span> pValorBinarizado);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_binarizado.html#ae0964aaa828b57b9c3c37f83e571292a">aplicar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen) <span class="keyword">override</span>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="class_binarizado.html#a872d6bdb6cc6957bbff7e74e6380dbba">~Binarizado</a>() <span class="keyword">override</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">   34</a></span>&#160;        <span class="keywordtype">unsigned</span> <a class="code" href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">valorBinarizado</a>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // BINARIZADO_H</span></div><div class="ttc" id="class_procesador_de_imagen_html"><div class="ttname"><a href="class_procesador_de_imagen.html">ProcesadorDeImagen</a></div><div class="ttdoc">Modela un procesador de imagen general que permite aplicar modificaciones a la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="procesadordeimagen_8h_source.html#l00013">procesadordeimagen.h:13</a></div></div>
+<div class="ttc" id="class_binarizado_html_a872d6bdb6cc6957bbff7e74e6380dbba"><div class="ttname"><a href="class_binarizado.html#a872d6bdb6cc6957bbff7e74e6380dbba">Binarizado::~Binarizado</a></div><div class="ttdeci">~Binarizado() override</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00032">binarizado.cpp:32</a></div></div>
+<div class="ttc" id="class_binarizado_html_a1dc5f8b251d080ca58dcf7175ba4c5b1"><div class="ttname"><a href="class_binarizado.html#a1dc5f8b251d080ca58dcf7175ba4c5b1">Binarizado::valorBinarizado</a></div><div class="ttdeci">unsigned valorBinarizado</div><div class="ttdoc">valorBinarizado Atributo de tipo entero sin signocon el valor de intensidad a partir del cual se bina...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8h_source.html#l00034">binarizado.h:34</a></div></div>
+<div class="ttc" id="class_binarizado_html_ae0964aaa828b57b9c3c37f83e571292a"><div class="ttname"><a href="class_binarizado.html#ae0964aaa828b57b9c3c37f83e571292a">Binarizado::aplicar</a></div><div class="ttdeci">void aplicar(Imagen &amp;pImagen) override</div><div class="ttdoc">aplicar Método de clase base redefinido encargado de aplicar el binarizado a la imagen recibida como ...</div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00008">binarizado.cpp:8</a></div></div>
+<div class="ttc" id="procesadordeimagen_8h_html"><div class="ttname"><a href="procesadordeimagen_8h.html">procesadordeimagen.h</a></div></div>
+<div class="ttc" id="class_binarizado_html_a9f73d235e2b6844e9c961ae58365497a"><div class="ttname"><a href="class_binarizado.html#a9f73d235e2b6844e9c961ae58365497a">Binarizado::Binarizado</a></div><div class="ttdeci">Binarizado(unsigned pValorBinarizado)</div><div class="ttdoc">Binarizado Constructor de la clase Binarizado. </div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8cpp_source.html#l00003">binarizado.cpp:3</a></div></div>
+<div class="ttc" id="class_binarizado_html"><div class="ttname"><a href="class_binarizado.html">Binarizado</a></div><div class="ttdoc">Modela un binarizado, encargada de binarizar una imagen. </div><div class="ttdef"><b>Definition:</b> <a href="binarizado_8h_source.html#l00013">binarizado.h:13</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="binarizado_8h.html">binarizado.h</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>

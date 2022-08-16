@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Procesamiento Digital de Imagenes: Fichero Fuente lut.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Procesamiento Digital de Imagenes
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('lut_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">lut.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lut_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lut_8h.html">lut.h</a>&quot;</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div><div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="class_l_u_t.html#a5fd7a4d70905dd7b338a3af054ca1619">    3</a></span>&#160;<a class="code" href="class_l_u_t.html#a5fd7a4d70905dd7b338a3af054ca1619">LUT::LUT</a>()</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;}</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="class_l_u_t.html#a15ffc1c9cd364a9fefe6f554916cea65">    8</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_l_u_t.html#a15ffc1c9cd364a9fefe6f554916cea65">LUT::aplicar</a>(<a class="code" href="class_imagen.html">Imagen</a> &amp;pImagen)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">int</span> valorIndice = 0;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">float</span> R, G, B;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> i = 0; i &lt; pImagen.<a class="code" href="class_imagen.html#a657201f39f7e69b121e29493560cb356">getAlto</a>(); ++i)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> j = 0; j &lt; pImagen.<a class="code" href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">getAncho</a>(); ++j)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        {</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            valorIndice = (pImagen.<a class="code" href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">getPixel</a>(i,j).<a class="code" href="class_pixel.html#a06c30ffb186e719500b1779b71f55d38">getIntensidadRGB</a>());</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            R = <a class="code" href="class_l_u_t.html#ad17e44eb30cf028469fd14d586af0351">tablaR</a>[valorIndice];</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            G = <a class="code" href="class_l_u_t.html#a05b1091bdd9b7590f9da5dcf5f52ed7b">tablaG</a>[valorIndice];</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            B = <a class="code" href="class_l_u_t.html#a370b4dbfcdece997a1bf20754b052d93">tablaB</a>[valorIndice];</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            pImagen.<a class="code" href="class_imagen.html#a5db12111b8763ba216e26bb3654e67ca">setPixel</a>(i, j, <a class="code" href="class_pixel.html">Pixel</a>(R,G,B));</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_l_u_t.html#ae9947e160c714d4fb548e8ef3a0b9fad">   26</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_l_u_t.html#ae9947e160c714d4fb548e8ef3a0b9fad">LUT::cargarLUT</a>(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;pDireccion)</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ifstream archi(pDireccion,ios::in | ios::binary);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    uint indice, colorR, colorG, colorB;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_l_u_t.html#ad17e44eb30cf028469fd14d586af0351">tablaR</a>.clear();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_l_u_t.html#a05b1091bdd9b7590f9da5dcf5f52ed7b">tablaG</a>.clear();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_l_u_t.html#a370b4dbfcdece997a1bf20754b052d93">tablaB</a>.clear();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span>(archi.is_open())</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">string</span> titulo;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        getline(archi, titulo, <span class="charliteral">&#39;\n&#39;</span>);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">while</span>(archi &gt;&gt; indice &gt;&gt; colorR &gt;&gt; colorG &gt;&gt; colorB)</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="class_l_u_t.html#ad17e44eb30cf028469fd14d586af0351">tablaR</a>.push_back(colorR);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="code" href="class_l_u_t.html#a05b1091bdd9b7590f9da5dcf5f52ed7b">tablaG</a>.push_back(colorG);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="code" href="class_l_u_t.html#a370b4dbfcdece997a1bf20754b052d93">tablaB</a>.push_back(colorB);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;}</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_l_u_t.html#a32c13a2eca927a82c4421a999d6ca1b9">   46</a></span>&#160;<a class="code" href="class_l_u_t.html#a32c13a2eca927a82c4421a999d6ca1b9">LUT::~LUT</a>()</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;{</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div><div class="ttc" id="class_l_u_t_html_ae9947e160c714d4fb548e8ef3a0b9fad"><div class="ttname"><a href="class_l_u_t.html#ae9947e160c714d4fb548e8ef3a0b9fad">LUT::cargarLUT</a></div><div class="ttdeci">void cargarLUT(const string &amp;pDireccion)</div><div class="ttdoc">cargarLUT Método que permite cargar un LUT(archivo con tabla de valores) </div><div class="ttdef"><b>Definition:</b> <a href="lut_8cpp_source.html#l00026">lut.cpp:26</a></div></div>
+<div class="ttc" id="class_l_u_t_html_a05b1091bdd9b7590f9da5dcf5f52ed7b"><div class="ttname"><a href="class_l_u_t.html#a05b1091bdd9b7590f9da5dcf5f52ed7b">LUT::tablaG</a></div><div class="ttdeci">vector&lt; unsigned &gt; tablaG</div><div class="ttdoc">tablaG Atributo de tipo vector de entero sin signo, que contiene las nuevas componentes G de los pixe...</div><div class="ttdef"><b>Definition:</b> <a href="lut_8h_source.html#l00046">lut.h:46</a></div></div>
+<div class="ttc" id="class_l_u_t_html_a15ffc1c9cd364a9fefe6f554916cea65"><div class="ttname"><a href="class_l_u_t.html#a15ffc1c9cd364a9fefe6f554916cea65">LUT::aplicar</a></div><div class="ttdeci">void aplicar(Imagen &amp;pImagen) override</div><div class="ttdoc">aplicar Método de clase base redefinido encargado de aplicar el LUT cargado a la imagen recibida como...</div><div class="ttdef"><b>Definition:</b> <a href="lut_8cpp_source.html#l00008">lut.cpp:8</a></div></div>
+<div class="ttc" id="class_imagen_html_a657201f39f7e69b121e29493560cb356"><div class="ttname"><a href="class_imagen.html#a657201f39f7e69b121e29493560cb356">Imagen::getAlto</a></div><div class="ttdeci">unsigned getAlto() const</div><div class="ttdoc">getAlto Método que permite devolver el alto de la imagen(cantidad filas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00127">imagen.cpp:127</a></div></div>
+<div class="ttc" id="class_imagen_html_a71973c726a85c747508d96eb22ff97f7"><div class="ttname"><a href="class_imagen.html#a71973c726a85c747508d96eb22ff97f7">Imagen::getAncho</a></div><div class="ttdeci">unsigned getAncho() const</div><div class="ttdoc">getAncho Método que permite devolver el ancho de la imagen(cantidad columnas). </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00121">imagen.cpp:121</a></div></div>
+<div class="ttc" id="class_l_u_t_html_a370b4dbfcdece997a1bf20754b052d93"><div class="ttname"><a href="class_l_u_t.html#a370b4dbfcdece997a1bf20754b052d93">LUT::tablaB</a></div><div class="ttdeci">vector&lt; unsigned &gt; tablaB</div><div class="ttdoc">tablaB Atributo de tipo vector de entero sin signo, que contiene las nuevas componentes B de los pixe...</div><div class="ttdef"><b>Definition:</b> <a href="lut_8h_source.html#l00052">lut.h:52</a></div></div>
+<div class="ttc" id="class_pixel_html_a06c30ffb186e719500b1779b71f55d38"><div class="ttname"><a href="class_pixel.html#a06c30ffb186e719500b1779b71f55d38">Pixel::getIntensidadRGB</a></div><div class="ttdeci">T getIntensidadRGB() const</div><div class="ttdoc">getIntensidadRGB Método encargado de devolver la intenisdad del pixel. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8cpp_source.html#l00020">pixel.cpp:20</a></div></div>
+<div class="ttc" id="class_imagen_html_a5db12111b8763ba216e26bb3654e67ca"><div class="ttname"><a href="class_imagen.html#a5db12111b8763ba216e26bb3654e67ca">Imagen::setPixel</a></div><div class="ttdeci">void setPixel(const unsigned &amp;pFila, const unsigned &amp;pColumna, const Pixel &amp;pPixel)</div><div class="ttdoc">setPixel Método que permite asignar un Pixel en la matriz de pixeles. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00038">imagen.cpp:38</a></div></div>
+<div class="ttc" id="class_l_u_t_html_a5fd7a4d70905dd7b338a3af054ca1619"><div class="ttname"><a href="class_l_u_t.html#a5fd7a4d70905dd7b338a3af054ca1619">LUT::LUT</a></div><div class="ttdeci">LUT()</div><div class="ttdoc">LUT Constructor de la clase LUT. </div><div class="ttdef"><b>Definition:</b> <a href="lut_8cpp_source.html#l00003">lut.cpp:3</a></div></div>
+<div class="ttc" id="class_l_u_t_html_ad17e44eb30cf028469fd14d586af0351"><div class="ttname"><a href="class_l_u_t.html#ad17e44eb30cf028469fd14d586af0351">LUT::tablaR</a></div><div class="ttdeci">vector&lt; unsigned &gt; tablaR</div><div class="ttdoc">tablaR Atributo de tipo vector de entero sin signo, que contiene las nuevas componentes R de los pixe...</div><div class="ttdef"><b>Definition:</b> <a href="lut_8h_source.html#l00040">lut.h:40</a></div></div>
+<div class="ttc" id="lut_8h_html"><div class="ttname"><a href="lut_8h.html">lut.h</a></div></div>
+<div class="ttc" id="class_l_u_t_html_a32c13a2eca927a82c4421a999d6ca1b9"><div class="ttname"><a href="class_l_u_t.html#a32c13a2eca927a82c4421a999d6ca1b9">LUT::~LUT</a></div><div class="ttdeci">~LUT() override</div><div class="ttdef"><b>Definition:</b> <a href="lut_8cpp_source.html#l00046">lut.cpp:46</a></div></div>
+<div class="ttc" id="class_imagen_html_a4bb7ec1998f208562bd99ee5f03a51aa"><div class="ttname"><a href="class_imagen.html#a4bb7ec1998f208562bd99ee5f03a51aa">Imagen::getPixel</a></div><div class="ttdeci">Pixel getPixel(const unsigned &amp;pFila, const unsigned &amp;pColumna) const</div><div class="ttdoc">getPixel Método que permite devolver un Pixel en la imagen. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8cpp_source.html#l00033">imagen.cpp:33</a></div></div>
+<div class="ttc" id="class_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">Modela un pixel, el componente fundamental de información de una imagen. </div><div class="ttdef"><b>Definition:</b> <a href="pixel_8h_source.html#l00016">pixel.h:16</a></div></div>
+<div class="ttc" id="class_imagen_html"><div class="ttname"><a href="class_imagen.html">Imagen</a></div><div class="ttdoc">Modela una imagen que es capaz de abrirse y guardarse desde una direccion. </div><div class="ttdef"><b>Definition:</b> <a href="imagen_8h_source.html#l00019">imagen.h:19</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="lut_8cpp.html">lut.cpp</a></li>
+    <li class="footer">Generado el Miércoles, 27 de Julio de 2022 21:17:06 para Procesamiento Digital de Imagenes por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
+</body>
+</html>
